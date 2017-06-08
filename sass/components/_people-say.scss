@@ -1,0 +1,89 @@
+#people-say {
+  position: relative;
+  padding-top: 110px;
+  background: url("../img/people-say/bg.jpg") center no-repeat;
+  background-size: cover;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: $white-bg;
+  }
+  
+  & > * {
+    position: relative;
+    z-index: 50;
+  }
+  
+  .sect-header{
+    margin-bottom: 130px;
+  }
+    
+  .item {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 84px;
+    padding-right: 80px;
+    padding-left: 140px;
+    text-align: left;
+
+    @media (max-width: $width-lg) {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      width: 49%;
+    }
+
+    @media (max-width: $width-md) {
+      display: block;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .item-name,
+  .item-occupation,
+  .item-message {
+    margin: 0;
+  }
+
+  .item-name {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .item-occupation {
+    position: relative;
+    margin-bottom: 36px;
+    font-style: italic;
+    color: $black;
+
+    &:after {
+      @include horiz-line();
+      bottom: -18px;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  .item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: $radius-round;
+    overflow: hidden;
+  }
+}

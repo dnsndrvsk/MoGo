@@ -1,0 +1,41 @@
+#achievements {
+  background-color: $sky;
+  
+  .item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 90px 10px 0;
+    width: 19%;
+    min-height: 270px;
+    border-right: 1px solid #fff;
+
+    &:first-child {
+      border-left: 1px solid #fff;
+    }
+
+    @media(max-width: $width-md) {
+      padding-top: 60px;
+      min-height: 210px;
+    }
+  }
+
+  .number {
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: $weight-bold;
+    color: #fff;
+
+    @media(max-width: $width-md) {
+      font-size: 42px;
+    }
+  }
+
+  .descr {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

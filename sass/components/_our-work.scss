@@ -1,0 +1,25 @@
+#our-work {
+  padding-top: 110px;
+    
+  .item {
+    float: left;
+    width: 25%;
+
+    @media (max-width: $width-lg) {
+      width: 50%;
+    }
+
+    @media (max-width: $width-md) {
+      width: 100%;
+    }
+  }
+
+  .item-image {
+    position: relative;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+  }
+}

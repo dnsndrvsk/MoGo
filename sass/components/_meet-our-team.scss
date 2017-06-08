@@ -1,0 +1,135 @@
+#meet-our-team {
+  padding: 110px 0 90px;
+  
+  .items-list  {
+    font-size: 0;
+  }
+    
+  .item {
+    float: left;
+    width: 31.33333%;
+    margin: 0 1% 30px;
+
+    @media (max-width: $width-lg) {
+      float: none;
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    @media (max-width: $width-md) {
+      width: 100%;
+      margin: 0 0 30px;
+    }
+  }
+
+  .item-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 40px;
+    transition: .5s ease;
+
+    &:hover {
+      top: -10px;
+      left: -10px;
+      box-shadow: 10px 10px 0 $sky;
+
+      .item-descr {
+        opacity: 1;
+      }
+    }
+  }
+
+  .item-image {
+    display: block;
+    width: 100%;
+  }
+
+  .item-descr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 55%;
+    background: $red-grad;
+    opacity: 0;
+    transition: opacity .5s .1s ease;
+
+    .socials {
+      display: inline-block;
+      font-size: 0;
+      background-color: $red;
+
+      a {
+        display: inline-block;
+        vertical-align: top;
+        width: 56px;
+        height: 56px;
+        margin-right: 1px;
+        padding-top: 15px;
+        background-color: $yellow;
+        transition: .3s ease;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background-color: $red;
+        }
+      }
+
+      .fb {
+        @include social-fb-stat();
+
+        &:hover {
+          @include social-fb-hvr();
+        }
+      }
+
+      .twt {
+        @include social-twt-stat();
+
+        &:hover {
+          @include social-twt-hvr();
+        }
+      }
+
+      .prin {
+        @include social-prin-stat();
+
+        &:hover {
+          @include social-prin-hvr();
+        }
+      }
+
+      .inst {
+        @include social-inst-stat();
+
+        &:hover {
+          @include social-inst-hvr();
+        }
+      }
+    }
+  }
+
+  .item-name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .item-occupation {
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: $weight-light;
+    font-style: italic;
+  }
+}

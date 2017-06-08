@@ -1,0 +1,50 @@
+#design {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 582px;
+  background: url("../img/design/bg.jpg") center no-repeat;
+  background-size: cover;
+  
+  @media (max-width: 600px) {
+    padding-bottom: 300px;
+  }
+  
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: $white-bg;
+  }
+  
+  & * {
+    position: relative;
+    z-index: 50;
+  }
+  
+  .tablet,
+  .phone {
+    position: absolute;
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  .tablet {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .phone {
+    bottom: -80px;
+    left: 57%;
+    z-index: 60;
+  }
+}
