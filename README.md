@@ -1,0 +1,1 @@
+# MoGo - Responsive & Adaptive website
