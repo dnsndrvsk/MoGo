@@ -1,1 +1,1 @@
-# MoGo - Responsive & Adaptive website
+# MoGo - Responsive & Adaptive LP
