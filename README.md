@@ -1,1 +1,1 @@
-# MoGo - Responsive & Adaptive LP
+# MoGo - Responsive LP
